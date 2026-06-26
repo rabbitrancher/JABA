@@ -6,28 +6,29 @@ computer science degree to good use??
 This is just a fun little project I'm working on in my free time, if you somehow came across this
 and want to use it go right ahead.
 
-## So What Is This?
+## What Is This?
 
-Not to be confused with any Huts, JABA is a simple webapp that allows you to record expenses (and
+Not to be confused with any Hutts, JABA is a simple webapp that allows you to record expenses (and
 income!) quickly and intuitively. The current stored fields are:
 
-- Amount: $ (cuz I'm American)
-- Type: expense or income
-- Category: A predefined category for the entry, with possibilities determined by the values in
-  [src/lib/categories.ts](src/lib/categories.ts). A fuzzy search (thanks fuse!) helps you see what
+- **Amount**: $ (cuz I'm American)
+- **Type**: expense or income
+- **Category**: A predefined category for the entry, with possibilities determined by the values in
+  [`src/lib/categories.ts`](src/lib/categories.ts). A fuzzy search (thanks fuse!) helps you see what
   the possible categories are when you get to make an entry.
-- Description: Something a bit more detailed than 'Category', but could still come up again. Like
-  specifying which brand of gas station you went to. And there's a fuzzy search here too don't
+- **Description**: Something a bit more detailed than 'Category', but could still come up again.
+  Like specifying which brand of gas station you went to. And there's a fuzzy search here too don't
   worry.
-- Notes: Freeform for any extra information you want. Maybe you went to Kroger and bought $300 of
-  cheese and want your tracker to be aware.
-- Date: When the transaction occurs! And it defaults to the current date because clicking is
+- **Notes**: Freeform for any extra information you want. Maybe you went to Kroger and bought $300
+  of cheese and want your tracker to be aware.
+- **Date**: When the transaction occurs! And it defaults to the current date because clicking is
   something to be avoided.
 
-## So How Do I Use It?
+## How Do I Use It?
 
-You actually want to? Awesome! I'm hoping to get some dockerfile setup later, but for now I'll just
-throw a bunch of information at you and let you figure it out from there.
+You actually want to? Awesome! I'm hoping to get some `Dockerfile` set up later for easy and
+actually useful deployment, but for now I'll just throw a bunch of information at you and let you
+figure it out from there.
 
 ### Tech Stack
 
@@ -67,7 +68,9 @@ npm install
 npm run db:push
 ```
 
-This generates migrations, applies them, and seeds the categories table.
+This generates migrations, applies them, and seeds the categories table. If you want to change up
+the categories, change the hardcoded category list file I described above. You can run this at any
+time, but it will wipe the database, so be aware.
 
 #### Development
 
@@ -75,6 +78,12 @@ This generates migrations, applies them, and seeds the categories table.
 npm run dev
 ```
 
+And then go to whatever address it tells you to in the terminal and try it out!
+
 ## License
 
 MIT
+
+## Other Relevant Information
+
+I hope you have a great day :sunglasses:
