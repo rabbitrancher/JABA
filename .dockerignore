@@ -1,0 +1,11 @@
+node_modules
+.svelte-kit
+budget.db
+.env
+package-lock.json
+.git
+.gitignore
+README.md
+*.sh
+.devcontainer
+.vscode
