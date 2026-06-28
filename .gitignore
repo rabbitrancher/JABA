@@ -27,8 +27,11 @@ vite.config.ts.timestamp-*
 # IDE
 .vscode/
 
+.prettierrc
+
 # Lockfiles
 *lock*
 
 # Docker
-.devcontainer/
+make_docker.sh
+clean_docker_cache.sh

@@ -30,6 +30,9 @@ You actually want to? Awesome! I'm hoping to get some `Dockerfile` set up later 
 actually useful deployment, but for now I'll just throw a bunch of information at you and let you
 figure it out from there.
 
+### Docker
+
+
 ### Tech Stack
 
 - [SvelteKit](https://kit.svelte.dev) - full-stack web framework
